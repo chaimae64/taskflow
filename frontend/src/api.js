@@ -1,5 +1,4 @@
-const BASE = "http://127.0.0.1:8000";
-
+const BASE = "https://satisfied-communication-production-e9df.up.railway.app";
 const headers = (token) => ({
   "Content-Type": "application/json",
   ...(token ? { Authorization: `Bearer ${token}` } : {}),
