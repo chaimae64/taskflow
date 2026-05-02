@@ -19,7 +19,10 @@ app = FastAPI(
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "https://satisfied-communication-production-e9df.up.railway.app"],
+    allow_origins=[
+        "http://localhost:5173",
+        "https://taskflow-production-91ee.up.railway.app",
+    ],
     allow_methods=["*"],
     allow_headers=["*"],
 )
